@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  et '/' do
+  get '/' do
     redirect to "/articles"
   end
 
